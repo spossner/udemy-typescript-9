@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="./style.css" rel="stylesheet" />
+        <script src="./app.ts" type="module" defer></script>
+    </head>
+    <body>
+        <div class="container mx-auto">
+            <template id="project-input">
+                <form class="border border-gray-900 rounded-lg p-6 pt-2">
+                    <div class="form-control">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" />
+                    </div>
+                    <div class="form-control">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="3"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <label for="people">People</label>
+                        <input type="number" id="people" step="1" min="0" max="10" />
+                    </div>
+                    <button
+                        type="submit"
+                        class="rounded-lg bg-sky-700 hover:bg-sky-600 text-white px-3 py-2 text-xl mt-3"
+                        id="add-project"
+                    >
+                        ADD PROJECT
+                    </button>
+                    <button class="px-3 py-2 text-xl text-gray-900" id="cancel-add-project">Cancel</button>
+                </form>
+            </template>
+            <template id="single-project">
+                <li class="text-xl py-2 px-4 text-gray-900"></li>
+            </template>
+            <template id="project-list">
+                <section class="projects border border-gray-900 rounded-lg p-6 pt-2">
+                    <header>
+                        <h2></h2>
+                    </header>
+                    <ul></ul>
+                    <button
+                        type="submit"
+                        class="rounded-lg bg-sky-700 hover:bg-sky-600 text-white px-3 py-2 text-xl mt-3"
+                        id="new-project"
+                    >
+                        NEW PROJECT
+                    </button>
+                </section>
+            </template>
+            <div id="app" class="my-6"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    label {
+        @apply block mt-2 text-xl;
+    }
+    input, textarea {
+        @apply border border-gray-300 text-xl font-semibold py-1.5 px-2;
+    } 
+}
